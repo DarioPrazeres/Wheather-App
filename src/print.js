@@ -1,3 +1,12 @@
+import cloudDay from  "./icon/cloudy-day.svg";
+import sun from  "./icon/sun.svg";
+import rainy from  "./icon/rainy.svg";
+import snow from  "./icon/snow.svg";
+import moon from  "./icon/moon.svg";
+import cloudNight from   "./icon/cloudy-night.svg";
+import umbrellaIcon from "./icon/umbrella.png";
+import windIcon from "./icon/wind.svg";
+import humidityicon from "./icon/humidity.svg";
 export {divTemp, showRain, showHum,  showWind, dayOfWeek, mouthOfYear, hour,  dayWeek, dayOf, mouth, dM, hourFull, cloudStatus};
 const data = new Date();
 const hour = data.getHours();
@@ -17,34 +26,17 @@ function cloudStatus(statusTemp, classli){
     cloud.classList.add(classli);
     if(hour >= 5 && hour < 18){
         switch(statusTemp){
-            case 'Clear': cloud.src = "./icon/sun.svg"; break;
-            case 'clear sky': cloud.src = "./icon/sun.svg"; break;
-            case 'few clouds': cloud.src = "./icon/mist.svg"; break;
-            case 'Clouds': cloud.src = "./icon/cloudy-day.svg"; break;            
-            case 'scattered clouds': cloud.src = "./icon/cloud.svg"; break;
-            case 'overcast clouds': cloud.src = "./icon/cloudy.svg"; break;
-            case 'Rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'light rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'heavy intensity rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'Snow': cloud.src = "./icon/snow.svg"; break;
-            case 'rain and snow': cloud.src = "./icon/snow.svg"; break;
-            case 'moderate rain': cloud.src = "./icon/rainy.svg"; break;
+            case 'Clear': cloud.src = sun; break;
+            case 'Clouds': cloud.src = cloudDay; break;  
+            case 'Rain': cloud.src = rainy; break;
+            case 'Snow': cloud.src = snow; break;
         }
     }else{
         switch(statusTemp){
-            case 'Clear': cloud.src = "./icon/moon.svg"; break;
-            case 'clear sky': cloud.src = "./icon/moon.svg"; break;
-            case 'few clouds': cloud.src = "./icon/mist.svg"; break;
-            case 'Clouds': cloud.src = "./icon/cloudy-night.svg"; break;            
-            case 'scattered clouds': cloud.src = "./icon/cloud.svg"; break;
-            case 'overcast clouds': cloud.src = "./icon/cloudy.svg"; break;
-            case 'Rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'light rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'snow': cloud.src = "./icon/snow.svg"; break;
-            case 'Snow': cloud.src = "./icon/snow.svg"; break;
-            case 'heavy intensity rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'moderate rain': cloud.src = "./icon/rainy.svg"; break;
-            case 'Snow': cloud.src = "./icon/snow.svg"; break;
+            case 'Clear': cloud.src = moon; break;
+            case 'Clouds': cloud.src = cloudNight; break; 
+            case 'Rain': cloud.src = rainy ; break;
+            case 'Snow': cloud.src = snow; break;
         }
     }
     return cloud;
@@ -74,7 +66,7 @@ function showRain(rainP){
 }
 function percentRain(){
     const umbrella = document.createElement('img');
-    umbrella.src = "./icon/umbrella.png";
+    umbrella.src = umbrellaIcon;
     umbrella.classList.add('image');
     return umbrella;
 }
@@ -90,7 +82,7 @@ function showHum(rainP){
 }
 function humidity(){
     const hum = document.createElement('img');
-    hum.src = "./icon/humidity.svg";
+    hum.src = humidityicon;
     hum.classList.add('image');
     return hum;
 }
@@ -106,7 +98,7 @@ function showWind(rainP){
 }
 function wind(){
     const wind = document.createElement('img');
-    wind.src = "./icon/wind.svg";
+    wind.src = windIcon;
     wind.classList.add('image');
     return wind;
 }
