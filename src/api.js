@@ -13,7 +13,7 @@ async function apiFunction(city){
     const daily_1 = await daily.json();
 
     headCity(cityData.name, cityData.weather[0].main, parseInt(cityData.main.feels_like/10, 10));
-    //changeBack(cityData.weather[0].main)
+    changeBack(cityData.weather[0].main);
     
     console.log(daily_1);
     console.log(cityData.weather[0].description);
