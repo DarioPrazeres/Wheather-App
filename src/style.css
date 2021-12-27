@@ -186,3 +186,27 @@ body{
     height: 30px;
     display: none;
 }
+.cloud{
+    background: url(./icon/cloud-2.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
+.rainy{
+    background: url(./icon/rain.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
+.sunrise{
+    background: url(./icon/sunrise.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
+.midday{
+    background: url(./icon/midday.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
+.sunset{
+    background: url(./icon/sunset_1.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
+.night{
+    background: url(./icon/cloud-2.jpg); 
+    background-position: center;background-repeat: no-repeat; background-size: cover;
+}
