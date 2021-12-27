@@ -1,10 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  
+    color: white;  
+    font-weight: 100;
+}
+*{
+    margin: 0;
+    letter-spacing: 0px;
+}
 body, html{    
     margin: 0;
     letter-spacing: 0px;
-    height: 100%;
 }
 body{
-    
+    height: 100%;
 }
 .bg{
     width: 100%;    
@@ -12,7 +22,16 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url(../icon/sunset_1.jpg);     
+    background: url(../src/icon/sunset_1.jpg);     
+}
+.btn{
+    background: none;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
 }
 .main{
     background-color: rgba(0, 0, 0, 0.705);
@@ -20,4 +39,150 @@ body{
     height: 100%;
     width: 100%;    
     margin: 0px;   
+}
+.search{   
+    height: 30px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+}
+.search:hover{
+    font-size: 17px;
+}
+.form{
+    width: 200px;
+    border-bottom: solid white 2px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    justify-content: space-around;
+}
+.cityName{
+    width: 60%;
+    border: none;
+    height: 20px;
+    padding: 2px;
+    font-size: 16px;
+    color: white;
+    background: none;
+}
+.cityName:focus{
+    border: none;
+    outline: none;
+}
+.btn-convert{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+}
+.buttonSearch{
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-image: url(../src/icon/ic_search_white_24dp.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.statusCity{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
+}
+.status{
+    padding-top: 50px;
+    text-align: center;
+}
+.tempCity{
+    padding: 10px;
+    font-size: 30px;
+}
+.hourly, .more-info{
+    padding: 10px;        
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid white 1px;
+    border-top: solid rgba(255, 255, 255, 0.527) 1px;
+}
+.hour-1, .more-1{
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-right: solid 1px rgba(255, 255, 255, 0.185);
+}
+.rain, .huminity, .temp, .wind{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.last{
+    border-right: none;
+}
+.containerSky{
+    display: flex;
+}
+.containerInfo{
+    display: flex;
+}
+.weekly{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 14%);
+}
+.week{
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #05050500;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background: #fffeff6c;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #fffeff;
+    border-radius: 50px;
+    height: 10px;
+}
+.image{
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+}
+.image_10{
+    width: 70px;
+    height: 70px;
+}
+.rainPercent{
+    margin-left: 5px;
+}
+.btn-info{
+    margin-top: 3px;
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+.btn-less{
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    display: none;
 }
