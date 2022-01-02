@@ -17,6 +17,7 @@ function showDatta() {
         divMore.innerText = '';
         status.innerText = '';
         apiFunction(cityName.value);
+        cityName.value = '';
     }
 }
 export default mainFunction;

@@ -7,6 +7,7 @@ import cloudNight from   "./icon/cloudy-night.svg";
 import umbrellaIcon from "./icon/umbrella.png";
 import windIcon from "./icon/wind.svg";
 import humidityicon from "./icon/humidity.svg";
+import mist from "./icon/mist.svg";
 export {divTemp, showRain, showHum,  showWind, dayOfWeek, mouthOfYear, hour,  dayWeek, dayOf, mouth, dM, hourFull, cloudStatus};
 const data = new Date();
 const hour = data.getHours();
@@ -30,6 +31,7 @@ function cloudStatus(statusTemp, classli){
             case 'Clouds': cloud.src = cloudDay; break;  
             case 'Rain': cloud.src = rainy; break;
             case 'Snow': cloud.src = snow; break;
+            case 'Mist': cloud.src = mist; break;
         }
     }else{
         switch(statusTemp){
@@ -37,6 +39,7 @@ function cloudStatus(statusTemp, classli){
             case 'Clouds': cloud.src = cloudNight; break; 
             case 'Rain': cloud.src = rainy ; break;
             case 'Snow': cloud.src = snow; break;
+            case 'Mist': cloud.src = mist; break;
         }
     }
     return cloud;
