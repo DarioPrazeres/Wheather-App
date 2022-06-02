@@ -7,7 +7,7 @@ https://darioprazeres.github.io/Wheather-App/
 <h1 align="center">Library</h1>
 
 
-<img src='https://img.shields.io/github/issues/DarioPrazeres/Restaurant'> <img src='https://img.shields.io/github/forks/DarioPrazeres/Restaurant'> <img src='https://img.shields.io/github/stars/DarioPrazeres/Restaurant'> <img src='https://img.shields.io/github/license/DarioPrazeres/Restaurant'> <img src='https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FDarioPrazeres%2FRestaurant'>
+<img src='https://img.shields.io/github/issues/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/forks/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/stars/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/license/DarioPrazeres/Wheather-App'> 
 
 <div align="center">
    Solution for a challenge from  <a href="theodinproject.com" target="_blank">The Odin Project</a>.
@@ -19,7 +19,7 @@ https://darioprazeres.github.io/Wheather-App/
       Demo
     </a>
     <span> | </span>
-    <a href="//github.com/DarioPrazeres/Library">
+    <a href="//github.com/DarioPrazeres/Wheather-App">
       Solution
     </a>
     <span> | </span>
@@ -43,7 +43,7 @@ https://darioprazeres.github.io/Wheather-App/
 
 ## Overview
 
-<p>The Library allow to create books with title, author and color of Book. It is a exercise to develop my skill in DOM.</p>
+<p>The LWheather-App allow to search a wheather in the some city. And show a lot information about it. This information can be a temperature of all day, some hours and humity. This information came from API Open Weather Map</p>
 
 
 ### Built With
@@ -55,6 +55,7 @@ https://darioprazeres.github.io/Wheather-App/
 - [HTML](https://html.com/) 
 - [CSS](https://html.com/css/)
 - [NPM](https://npmjs.com/)
+- [WebPack](https://webpack.js.org/)
 - A code editor as:[VS code](https://code.visualstudio.com/)
 
 ## Features
@@ -88,7 +89,7 @@ This application was created as a submission to a [The Odin Project](https://the
 <p>Run this comand in terminal: <code>git@github.com:DarioPrazeres/Restaurant.git</code></p>
 <p>After you clone with sucess</p>
 <p>Run this comand in terminal: <code>npm install</code></p>
-<p>Then open director till dist and open the index.html file with your Browser.</p>
+<p>Then open director till docs and open the index.html file with your Browser.</p>
 
 ## Contact
 
