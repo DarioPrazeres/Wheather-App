@@ -1,10 +1,8 @@
 # wheather-App
-https://darioprazeres.github.io/Wheather-App/
-
 
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Library</h1>
+<h1 align="center">Wheather App
 
 
 <img src='https://img.shields.io/github/issues/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/forks/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/stars/DarioPrazeres/Wheather-App'> <img src='https://img.shields.io/github/license/DarioPrazeres/Wheather-App'> 
