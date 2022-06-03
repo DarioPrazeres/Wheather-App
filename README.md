@@ -84,12 +84,12 @@ This application was created as a submission to a [The Odin Project](https://the
 - A code editor as:[VS code](https://code.visualstudio.com/)
 
 <p>After you need to clone this repository, you need to open the terminal and choose the folder you want to clone</p>
-<p>Run this comand in terminal: <code>git@github.com:DarioPrazeres/Restaurant.git</code></p>
+<p>Run this comand in terminal: <code>git@github.com:DarioPrazeres/wheather-App.git</code></p>
 <p>After you clone with sucess</p>
 <p>Run this comand in terminal: <code>npm install</code></p>
 <p>Then open director till docs and open the index.html file with your Browser.</p>
 
 ## Contact
 
-- GitHub [@DarioPrazeres](https://{github.com/DarioPrazeres})
+- GitHub [@DarioPrazeres](https://github.com/DarioPrazeres)
 - Twitter [@dario_prazeres](https://twitter.com/dario_prazeres)
