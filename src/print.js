@@ -9,6 +9,7 @@ import windIcon from "./icon/wind.svg";
 import humidityicon from "./icon/humidity.svg";
 import mist from "./icon/mist.svg";
 export {divTemp, showRain, showHum,  showWind, dayOfWeek, mouthOfYear, hour,  dayWeek, dayOf, mouth, dM, hourFull, cloudStatus};
+
 const data = new Date();
 const hour = data.getHours();
 const mouth = data.getMonth();

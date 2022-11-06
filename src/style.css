@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  
+    font-family: Arial, Helvetica, sans-serif; 
     color: white;  
     font-weight: 100;
 }
@@ -16,13 +16,40 @@ body, html{
 body{
     height: 100%;
 }
+/*General Settings*/
+p{
+    font-size: 16px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+h2{
+    font-size: 50px;
+    font-weight: 100;
+}
+h3{
+    font-size: 40px;
+    font-weight: 100;
+}
+h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+h5{
+    font-size: 20px;
+    font-weight: 100;
+}
+h6{
+    font-size: 15px;
+    font-weight: 400;
+}
 .bg{
     width: 100%;    
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background: url(../src/icon/sunset_1.jpg);     
+    background-size: cover;  
 }
 .btn{
     background: none;
@@ -34,8 +61,6 @@ body{
     color: rgb(2, 2, 2);
 }
 .main{
-    background-color: rgba(0, 0, 0, 0.705);
-    opacity: 0.8;
     height: 100%;
     width: 100%;    
     margin: 0px;   
@@ -44,10 +69,13 @@ body{
 }
 /* CSS about Side bar*/
 .sideBar{
-    width: 30%;
+    padding: 5px;
+    width: 35%;
+    background-color: #1E213A;
 }
 .body-project{
-    width: 70%;
+    width: 65%;
+    background-color: #100E1D;
 }
 .search{   
     height: 30px;
@@ -62,9 +90,6 @@ body{
 .form{
     width: 200px;
     border-bottom: solid white 2px;
-    position: absolute;
-    top: 0px;
-    right: 5px;
     justify-content: space-around;
 }
 .cityName{
@@ -97,6 +122,8 @@ body{
 }
 .statusCity{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
     justify-content: baseline;
     align-items: center;
     justify-content: center;
@@ -107,7 +134,7 @@ body{
 }
 .tempCity{
     padding: 10px;
-    font-size: 30px;
+    font-size: 70px;
 }
 .hourly, .more-info{
     padding: 10px;        
@@ -176,8 +203,9 @@ body{
     height: 40px;
 }
 .image_10{
-    width: 70px;
-    height: 70px;
+    width: 300px;
+    height: 300px;
+    margin: 0px 0px 10px 0px;
 }
 .rainPercent{
     margin-left: 5px;

@@ -1,4 +1,5 @@
 export default changeBack;
+
 const main = document.querySelector('section.bg');
 const data = new Date();
 const hour = data.getHours();
