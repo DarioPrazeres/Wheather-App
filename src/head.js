@@ -12,6 +12,7 @@ const tempCity = document.createElement('h1');
 const sky = document.createElement('h3');
 const location = document.createElement('div');
 const iconLocation = document.createElement('img');
+
 iconLocation.src = sourceLocation;
 //var status = 'few clouds';
 function headCity(city, status, temp) {    
