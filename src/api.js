@@ -30,13 +30,5 @@ async function apiFunction(city){
     
     
 }
-//dataCenter_1.innerHTML += ` A temperatura maxima do dia ${cont} é ${parseInt(daily_1.daily[cont].temp.max/10, 10)} e ${parseInt(daily_1.daily[cont].temp.min/10)}, humanity: ${(daily_1.daily[cont].humidity)}%, Cloud:${parseInt(daily_1.daily[cont].clouds)}%, Wind Speed:${parseInt(daily_1.daily[cont].wind_speed)} <br>`;
-/*for(let cont = 0; cont < 24; cont++){
-      hourDatta(parseInt(daily_1.hourly[cont].temp/10, 10), daily_1.hourly[cont].clouds, cont, daily_1.hourly[cont].weather[0].description);
-      //moreDatta(daily_1.hourly[cont].humidity, parseInt(daily_1.hourly[cont].wind_speed/10, 10), cont);
-    }
-    for(let cont = 0; cont < 24; cont++){
-      moreDatta(daily_1.hourly[cont].humidity, parseInt(daily_1.hourly[cont].wind_speed/10, 10), cont);
-    }
-     */
+
 export default apiFunction;

@@ -39,6 +39,15 @@ body{
     height: 100%;
     width: 100%;    
     margin: 0px;   
+    /*New way to Show the informactions*/
+    display: flex;
+}
+/* CSS about Side bar*/
+.sideBar{
+    width: 30%;
+}
+.body-project{
+    width: 70%;
 }
 .search{   
     height: 30px;
