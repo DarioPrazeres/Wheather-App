@@ -63,7 +63,7 @@ h6{
     height: 50px;
 }
 .btn-gps{
-    background-image: url(./icon/location.png);
+    background-image: url(./icon/gps.png);
     background-size: contain;
     width: 50px;
     height: 50px;
@@ -84,10 +84,11 @@ h6{
 }
 /* CSS about Side bar*/
 .sideBar{
-    padding: 5px;
+    padding: 15px;
     width: 25%;
     background-color: #1E213A;
-    position: relative;
+    position: relative;  
+    height: 915px; 
 }
 .body-project{
     width: 65%;
@@ -104,9 +105,15 @@ h6{
     font-size: 17px;
 }
 .btn-close{
+    width: 50px;
+    height: 50px;
+    border: none;
     position: absolute;
     right: 0px;
     top: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    background-image: url(./icon/close.png);
 }
 /*Form about Search*/
 .form{
@@ -131,22 +138,36 @@ h6{
     padding: 10px;
     background-color: rgb(25, 0, 123);
     border: none;
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
     font-size: 16px;
 }
+
 /*List of Cities*/
+.list-Search{
+    padding: 5px;
+}
 .list-button{
     width: 100%;
     height: 50px;
-    padding: 4px;
-    margin: 4px;
+    padding: 5px;
+    margin: 20px 0px 20px 0px;
     color: white;
     text-align: left;
     font-size: 18px;
     outline: none;
     border: none;
+    border-radius: 5px;
     background-color: #05050500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seta{
+    width: 20px;
+    height: 20px;
+    background-image: url(./icon/seta.png);
+    background-size: contain;
 }
 .list-button:hover{
     outline: 1px white solid;
@@ -166,6 +187,7 @@ h6{
 .tempCity{
     padding: 10px;
     font-size: 70px;
+    margin: 63px 0px 63px 0px;
 }
 .hourly, .more-info{
     padding: 10px;        
@@ -283,12 +305,13 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 7px;
 }
 .location img{
     height: 30px;
 }
 .date, .sky{
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 60px 0px;
 }
 .visible{
     display: block;
