@@ -1,7 +1,6 @@
-import {  dayWeek, dayOf, mouth, dM, hourFull, hour, cloudStatus } from './print';
+import {  cloudStatus } from './print';
 import dayOfWeek from './modules/dayOfWeek';
 import mouthOfYear from './modules/mouthOfYear';
-
 import sourceLocation from './icon/location.png';
 
 const status = document.querySelector('div.status');
@@ -20,7 +19,7 @@ function headCity(city, status, temp) {
     statusCity.appendChild(cloudStatus(status, 'image_10'));
     statusCity.appendChild(tempCity); 
     cityTitle.innerHTML = city;
-    tempCity.innerHTML = `${temp} °c`;    
+    tempCity.innerHTML = `${temp}`;    
     sky.innerHTML = `${status}`
 }
 function createElem() {

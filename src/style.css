@@ -44,13 +44,6 @@ h6{
     font-size: 15px;
     font-weight: 400;
 }
-.bg{
-    width: 100%;    
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
 .btn{
     padding: 10px;
     background: rgb(74, 73, 73);
@@ -76,23 +69,20 @@ h6{
     justify-content: space-between;
 }
 .main{
-    height: 100%;
-    width: 100%;    
-    margin: 0px;   
+    height: 100vh;
+    width: 100vw;    
+    margin: 0px;  
+    padding: 0px; 
     /*New way to Show the informactions*/
     display: flex;
+    background-color: #100E1D;
 }
 /* CSS about Side bar*/
 .sideBar{
     padding: 15px;
-    width: 25%;
+    width: 27%;
     background-color: #1E213A;
     position: relative;  
-    height: 915px; 
-}
-.body-project{
-    width: 65%;
-    background-color: #100E1D;
 }
 .search{   
     height: 30px;
@@ -189,18 +179,6 @@ h6{
     font-size: 70px;
     margin: 63px 0px 63px 0px;
 }
-.hourly, .more-info{
-    padding: 10px;        
-    width: 100%;
-    height: auto;
-    overflow-x: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid white 1px;
-    border-top: solid rgba(255, 255, 255, 0.527) 1px;
-}
 .hour-1, .more-1{
     margin: auto;
     padding: 10px;
@@ -209,13 +187,14 @@ h6{
     text-align: center;
     border-right: solid 1px rgba(255, 255, 255, 0.185);
 }
+/*
 .rain, .huminity, .temp, .wind{
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-}
+}*/
 .last{
     border-right: none;
 }
@@ -318,4 +297,147 @@ h6{
 }
 .invisible{
     display: none;
+}
+/*----------Body Css----------*/
+.body-project{
+    width: 70%;
+    background-color: #100E1D;
+    position: relative;
+}
+.btn-group-wheater{
+    position: absolute;
+    right: 20px;
+    margin: 50px;
+}
+.btn-unity{
+    border-radius: 50%;
+    margin: 4px;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+}
+.btn-unity:hover{
+    background-color: rgb(12, 12, 12);
+    border: 1px solid wheat;
+    color: white;
+}
+.btn-active{
+    background-color: white;
+    border: 1px solid wheat;
+    color: #252525;
+}
+/*----------Week Weather---------*/
+.temp-day{
+    display: flex;
+    margin: 150px 0px 40px 0px;
+    justify-content: space-around;
+}
+.day{
+    width: 175px;
+    height: 230px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 3px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E213A;
+}
+.temps{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+.day h4{
+    font-size: 22px;
+}
+.temp{
+    width: 125px;
+    height: 125px;
+    padding: 20px 0px 15px 0px;
+}
+/*----------------hight-lights CSS--------*/
+.hight-lights{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.high{
+    margin-left: 250px;
+}
+.more-info{
+    display: grid;
+    padding: 8px;
+    row-gap: 25px;
+    column-gap: 25px;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 220px 125px;
+}
+.more-info h5{
+    font-size: 24px;
+}
+.wind, .humidity, .visibility, .air{
+    padding: 10px;
+    background-color: #1E213A;
+    text-align: center;
+}
+.visibility, .air{
+    text-align: center;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.humidity h5, .humidity h2{
+    margin: 15px;
+}
+.progressive{
+    margin: 10px;
+    width: 250px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(224, 219, 219);
+    position: relative;
+}
+.progress{
+    border-radius: 5px;
+    width: 85%;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    background-color: #fea400;
+}
+.prog{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.percDisc{
+    display: flex;
+    justify-content: space-between;
+} 
+.hundred{
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+}
+.navegation{
+    border-radius: 50%;
+    background-color: rgb(93, 90, 90);
+    height: 45px;
+    width: 45px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav h5{
+    margin: 7px;
 }

@@ -10,47 +10,117 @@
 </head>
 
 <body>
-    <section class="bg">
-        <div class="main">
-            <div class="sideBar">                
-                <div class="form-group invisible">
-                    <button class="btn-close"></button>
-                    <div class="form">
-                        <input type="text" placeholder="City Name" class="cityName">
-                        <button type="button" class="btn buttonSearch">Search</button>
-                    </div>
-                    <div class="list-Search">
-                        <div id="list-button" class="list-button">Luanda <div  class="set invisible"></div></div>
-                        <div id="list-button" class="list-button">Luanda <div  class="set invisible"></div></div>
-                    </div>
+    <div class="main">
+        <div class="sideBar">
+            <div class="form-group invisible">
+                <button class="btn-close"></button>
+                <div class="form">
+                    <input type="text" placeholder="City Name" class="cityName">
+                    <button type="button" class="btn buttonSearch">Search</button>
                 </div>
-                <div class="info">
-                    <div class="group-button">
-                        <button class="btn btn-search">Search for places</button>
-                        <button class="btn btn-gps"></button>
+                <div class="list-Search">
+                    <div id="list-button" class="list-button">Luanda <div class="set invisible"></div>
                     </div>
-                    <div class="status">
+                    <div id="list-button" class="list-button">Luanda <div class="set invisible"></div>
                     </div>
                 </div>
             </div>
-            <div class="body-project">
-                <h2>Hourly</h2>
-                <div class="hourly">
-                    <div class="containerSky">
-
+            <div class="info">
+                <div class="group-button">
+                    <button class="btn btn-search">Search for places</button>
+                    <button class="btn btn-gps"></button>
+                </div>
+                <div class="status">
+                </div>
+            </div>
+        </div>
+        <div class="body-project">
+            <div class="btn-group-wheater">
+                <button id="unity-1" class="btn btn-unity btn-active">°C</button>
+                <button id="unity-2" class="btn btn-unity">°F</button>
+                <button id="unity-3" class="btn btn-unity">°K</button>
+            </div>
+            <div class="temp-day">
+                <div class="day">
+                    <h4 class="dateTemp">Sun, 8 Nov</h4>
+                    <img src="../src/icon/cloudy-day.svg" class="temp" alt="">
+                    <div class="temps">
+                        <h4 class="tempMax">21c</h4>
+                        <h4 class="tempMin">19c</h4>
                     </div>
                 </div>
-                <h2>Weekly</h2>
-                <div class="weekly">
+                <div class="day">
+                    <h4 class="dateTemp">Sun, 30 Nov</h4>
+                    <img src="../src/icon/cloud.svg" class="temp" alt="">
+                    <div class="temps">
+                        <h4 class="tempMax">21c</h4>
+                        <h4 class="tempMin">19c</h4>
+                    </div>
+
                 </div>
+                <div class="day">
+                    <h4 class="dateTemp">Sun, 8 Nov</h4>
+                    <img src="../src/icon/cloudy-night.svg" class="temp" alt="">
+                    <div class="temps">
+                        <h4 class="tempMax">21c</h4>
+                        <h4 class="tempMin">19c</h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <h4 class="dateTemp">Sun, 8 Nov</h4>
+                    <img src="../src/icon/mist.svg" class="temp" alt="">
+                    <div class="temps">
+                        <h4 class="tempMax">21c</h4>
+                        <h4 class="tempMin">19c</h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <h4 class="dateTemp">Sun, 8 Nov</h4>
+                    <img src="../src/icon/sun.svg" class="temp" alt="">
+                    <div class="temps">
+                        <h4 class="tempMax">21c</h4>
+                        <h4 class="tempMin">19c</h4>
+                    </div>
+                </div>
+            </div>
+            <h4 class="high">Today's Hightlights</h4>
+            <div class="hight-lights">                
                 <div class="more-info">
-                    <div class="containerInfo">
+                    <div class="wind">
+                       <h5>Wind</h5>
+                       <h2 class="wind">7.2 mph</h2>
+                       <div class="nav">
+                            <img class="navegation" src="../src/icon/navegacao.png" alt="">
+                            <h5>WSW</h5>
+                       </div>
+                    </div>
+                    <div class="humidity">
+                        <h5>Humidity</h5>
+                        <h2 class="humidityP">85%</h2>
+                        <div class="prog">
+                            <div class="percDisc">
+                                <p class="zero">0</p>
+                                <p class="fith">50</p>
+                                <p class="">100</p>
+                            </div>
+                            <div class="progressive">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="hundred">%</p>
+                        </div>
+                    </div>
+                    <div class="visibility">
+                        <h5>Visibility</h5>
+                        <h2 class="visibility">10 miles</h2>
+                    </div>
+                    <div class="air">
+                        <h5>Air Pressure</h5>
+                        <h2 class="air">1014 mb</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <script src="bundle.js"></script>
 </body>
-
 </html>
