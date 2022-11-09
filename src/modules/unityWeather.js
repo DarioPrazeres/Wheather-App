@@ -4,6 +4,8 @@ import { cityData, realTemperature } from "./apiCity";
 import humidityShow from "./humidity";
 import showAir from "./air";
 import showVisibility from "./visibility";
+import { weatherDaily } from "../weekly";
+
 
 const buttonCelsius = document.getElementById('unity-1');
 const buttonFahrenheit = document.getElementById('unity-2');
@@ -19,6 +21,7 @@ headCity(cityData.name, cityData.weather[0].main, converterWeather(realTemperatu
 humidityShow(humidityValue);
 showAir(cityData.main.pressure);
 showVisibility(cityData.visibility/1000);
+
 
 function weatherUnity(){
     buttonCelsius.addEventListener('click', ()=>{
@@ -43,4 +46,4 @@ function weatherUnity(){
         headCity(cityData.name, cityData.weather[0].main,converterWeather(realTemperature, unity));
     });
 }
-export default weatherUnity;
+export { weatherUnity, unity};
