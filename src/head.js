@@ -60,4 +60,5 @@ function startTime() {
     }, 500);
 }
 startTime();
+
 export default headCity;

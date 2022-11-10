@@ -9,15 +9,14 @@ const tempStatus = document.querySelectorAll('div.tempStatus-1');
 const tempMax = document.querySelectorAll('h4.tempMax');
 const tempMin = document.querySelectorAll('h4.tempMin');
 
-console.log(dailyData);
-
 function weekTimeline() {
+    
     var today = new Date();
-
     var k=1;
-    var incremetDay = 0;
+    var incremetDay = 1;
     var dayOfMouth = today.getUTCDate() + incremetDay;
     var day = today.getDay();
+
     for (let j = 0; j < 5; j++) { 
         dayOfMouth = today.getUTCDate() + incremetDay;
         console.log(k)
@@ -34,14 +33,12 @@ function weekTimeline() {
 
 
 }
-function weatherDaily(unity){
-    var count = 1;
-    for (let j = 0; j < 5; j++) { 
-        tempStatus[j].appendChild(cloudStatus(dailyData.daily[count].weather[0].main, 'tempStatus'));
-        tempMax[j].innerHTML = converterWeather((dailyData.daily[count].temp.max).toFixed(), unity);
-        tempMin[j].innerHTML = converterWeather((dailyData.daily[count].temp.min).toFixed(0), unity);
-
-        count++;
-    }
+function weatherDaily(status, count){    
+        tempStatus[count].appendChild(cloudStatus(status, 'tempStatus'));
 }
-export { weekTimeline, weatherDaily };
+function showTempMaxMin(unity, tMax, tMin, count){
+    console.log(unity)
+    tempMax[count].innerHTML = converterWeather(tMax.toFixed(), unity);
+    tempMin[count].innerHTML = converterWeather(tMin.toFixed()-1, unity);
+}
+export { weekTimeline, weatherDaily, showTempMaxMin };
