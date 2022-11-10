@@ -10,21 +10,21 @@ const tempMax = document.querySelectorAll('h4.tempMax');
 const tempMin = document.querySelectorAll('h4.tempMin');
 
 function weekTimeline() {
-    
+
     var today = new Date();
-    var k=1;
+    var k = 1;
     var incremetDay = 1;
     var dayOfMouth = today.getUTCDate() + incremetDay;
     var day = today.getDay();
 
-    for (let j = 0; j < 5; j++) { 
+    for (let j = 0; j < 5; j++) {
         dayOfMouth = today.getUTCDate() + incremetDay;
         console.log(k)
         if (day + k <= 6) {
-            dateTemp[j].innerText = dayOfWeek(day + k) +', ' + dayOfMouth + ' ' + mouthOfYear(today.getMonth());
+            dateTemp[j].innerText = dayOfWeek(day + k) + ', ' + dayOfMouth + ' ' + mouthOfYear(today.getMonth());
         } else {
-            k=0
-            dateTemp[j].innerText = dayOfWeek(k) +', ' + dayOfMouth + ' ' + mouthOfYear(today.getMonth());
+            k = 0
+            dateTemp[j].innerText = dayOfWeek(k) + ', ' + dayOfMouth + ' ' + mouthOfYear(today.getMonth());
             day = 0;
         }
         incremetDay++
@@ -33,12 +33,13 @@ function weekTimeline() {
 
 
 }
-function weatherDaily(status, count){    
-        tempStatus[count].appendChild(cloudStatus(status, 'tempStatus'));
+function weatherDaily(status, count) {
+    tempStatus[count].innerHTML = ' ';
+    tempStatus[count].appendChild(cloudStatus(status, 'tempStatus'));
 }
-function showTempMaxMin(unity, tMax, tMin, count){
+function showTempMaxMin(unity, tMax, tMin, count) {
     console.log(unity)
     tempMax[count].innerHTML = converterWeather(tMax.toFixed(), unity);
-    tempMin[count].innerHTML = converterWeather(tMin.toFixed()-1, unity);
+    tempMin[count].innerHTML = converterWeather(tMin.toFixed() - 1, unity);
 }
 export { weekTimeline, weatherDaily, showTempMaxMin };

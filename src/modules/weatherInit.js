@@ -6,6 +6,7 @@ import showAir from "./air";
 import showVisibility from "./visibility";
 import { weatherDaily, weekTimeline, showTempMaxMin } from "../weekly";
 import windShow from "./wind";
+//import { dailyData } from "./apiCity";
 
 
 const buttonCelsius = document.getElementById('unity-1');
@@ -20,13 +21,18 @@ var unity = 'Celsius';
 
 async function weatherUnity(city) {
     /**-----------Api Init------------- */
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`, { mode: 'cors' });
-    cityData = await response.json();
-    const daily = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityData.coord.lat}&lon=${cityData.coord.lon.toFixed()}&exclude=weekly&appid=${key}`, { mode: 'cors' });
-  
-    console.log(cityData);
-    dailyData = await daily.json();
-    var realTemperature = parseInt(cityData.main.feels_like, 10);
+    try {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`, { mode: 'cors' });
+        cityData = await response.json();
+        const daily = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityData.coord.lat}&lon=${cityData.coord.lon.toFixed()}&exclude=weekly&appid=${key}`, { mode: 'cors' });
+      
+        console.log(cityData);
+        dailyData = await daily.json();
+        var realTemperature = parseInt(cityData.main.feels_like, 10);
+        console.log(dailyData);
+    } catch (error) {
+        alert('Error! Verify your Connection or City Not Found!')
+    }
 
     /**-------Initialization of Functions----------- */
     var humidityValue = cityData.main.humidity;
