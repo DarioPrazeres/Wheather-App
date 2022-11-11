@@ -405,7 +405,13 @@ footer a{
     color: white;
     font-weight: 400;
 }
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 800px){
+    .more-info{ 
+        grid-template-columns: 300px;
+        grid-template-rows: 220px 220px 125px 125px;
+    }
+}
+@media only screen and (max-width: 1400px){
     h4{
         font-size: 16px;
     }
@@ -427,6 +433,13 @@ footer a{
     .high{
         margin-left: 0px;
         text-align: center;
+    }
+    .tempStatus{
+        width: 100px;
+        height: 100px;
+    }
+    .day{
+        width: 125px;
     }
 }
 @media only screen and (max-width: 2000px){
