@@ -379,13 +379,11 @@ footer a{
         flex-direction: column;
     }
     .sideBar{
-        width: 100vmin;
         height: 600px;
     }
     .body-project{
         margin: 0;
         padding: 15px;
-        width: 100vmin;
     }
     .more-info{ 
         grid-template-columns: 400px;
