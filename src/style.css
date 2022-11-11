@@ -376,6 +376,7 @@ footer a{
         font-size: 16px;
     }
     .main{
+        width: 100%;
         flex-direction: column;
     }
     .sideBar{
