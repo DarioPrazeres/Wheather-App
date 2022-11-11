@@ -181,14 +181,7 @@ h6{
     font-size: 70px;
     margin: 63px 0px 63px 0px;
 }
-.hour-1, .more-1{
-    margin: auto;
-    padding: 10px;
-    width: 200px;
-    height: auto;
-    text-align: center;
-    border-right: solid 1px rgba(255, 255, 255, 0.185);
-}
+
 /*
 .rain, .huminity, .temp, .wind{
     padding: 5px;
@@ -214,23 +207,7 @@ h6{
 .week{
     text-align: center;
 }
-::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
-}
-::-webkit-scrollbar-track{
-    background: #05050500;
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb{
-    background: #fffeff6c;
-    border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #fffeff;
-    border-radius: 50px;
-    height: 10px;
-}
+
 .image{
     padding: 3px;
     width: 40px;
@@ -256,30 +233,6 @@ h6{
     width: 100px;
     height: 30px;
     display: none;
-}
-.cloud{
-    background: url(./icon/cloud-2.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
-}
-.rainy{
-    background: url(./icon/rain.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
-}
-.sunrise{
-    background: url(./icon/sunrise.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
-}
-.midday{
-    background: url(./icon/midday.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
-}
-.sunset{
-    background: url(./icon/sunset_1.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
-}
-.night{
-    background: url(./icon/cloud-2.jpg); 
-    background-position: center;background-repeat: no-repeat; background-size: cover;
 }
 .location{
     margin-top: 30px;
