@@ -1,4 +1,3 @@
-import { cityData, dailyData } from "./modules/apiCity";
 import dayOfWeek from "./modules/dayOfWeek";
 import mouthOfYear from "./modules/mouthOfYear";
 import cloudStatus from "./modules/cloudStatus";
@@ -19,7 +18,6 @@ function weekTimeline() {
 
     for (let j = 0; j < 5; j++) {
         dayOfMouth = today.getUTCDate() + incremetDay;
-        console.log(k)
         if (day + k <= 6) {
             dateTemp[j].innerText = dayOfWeek(day + k) + ', ' + dayOfMouth + ' ' + mouthOfYear(today.getMonth());
         } else {
@@ -38,7 +36,6 @@ function weatherDaily(status, count) {
     tempStatus[count].appendChild(cloudStatus(status, 'tempStatus'));
 }
 function showTempMaxMin(unity, tMax, tMin, count) {
-    console.log(unity)
     tempMax[count].innerHTML = converterWeather(tMax.toFixed(), unity);
     tempMin[count].innerHTML = converterWeather(tMin.toFixed() - 1, unity);
 }

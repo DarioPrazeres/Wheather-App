@@ -13,19 +13,10 @@ function search() {
             var city = cityName.value.charAt(0).toUpperCase() + cityName.value.slice(1);
             elementForm.classList.add('invisible');
             elementInfo.classList.remove('invisible');
-            console.log(city);
-            //historicCity(city, 1);
-            var dp = localStorage
-            console.log(dp)
             weatherUnity(city);
             cityName.value='';
         }
         
     })
-}
-function historicCity(nameCity, count){
-    localStorage.setItem(`city-${count}`, nameCity);
-    console.log('HERE--------')
-    console.log(localStorage.getItem(`city-${count}`))
 }
 export default search;

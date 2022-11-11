@@ -5,7 +5,6 @@ const windElement = document.querySelector('h2.wind');
 imgNavegation.src = sourceNav;
 
 function windShow(speed, degrau){
-    console.log('Eu sou WIND');
     imgNavegation.setAttribute('style', `transform: rotate(${degrau}deg)`);
     windElement.innerHTML = `${speed} mph`;
 }

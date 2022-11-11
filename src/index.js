@@ -1,6 +1,5 @@
 import search from './modules/search';
 import displayForm from './modules/hiddenElement';
-import historicCity from './modules/historic';
 import './style.css';
 import {weatherUnity} from './modules/weatherInit';
 
@@ -11,7 +10,6 @@ var city = 'Luanda';
 weatherUnity(city);
 displayForm();
 search();
-historicCity()
 /**--------------GPS Function-------------------- */
 gpsButton.addEventListener('click', ()=>{
     navigator.geolocation.getCurrentPosition(sucessCallback, errorCallback);
@@ -25,12 +23,3 @@ gpsButton.addEventListener('click', ()=>{
 const errorCallback = (error)=>{
     console.log(error);
 }
-/**---------------Historic Function----------------- 
-localStorage.setItem('lastName-0', 'London');
-localStorage.setItem('lastName-1', 'Luanda');
-localStorage.setItem('lastName-2', 'Tokyo');
-localStorage.setItem('lastName-3', 'New York');
-localStorage.setItem('lastName-4', 'Moscow');*/
-var dp = localStorage;
-
-console.log(dp)

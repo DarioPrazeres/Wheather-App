@@ -1,4 +1,4 @@
-import {  cloudStatus } from './print';
+import  cloudStatus  from './print';
 import dayOfWeek from './modules/dayOfWeek';
 import mouthOfYear from './modules/mouthOfYear';
 import sourceLocation from './icon/location.png';

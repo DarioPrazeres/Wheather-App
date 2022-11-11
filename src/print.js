@@ -8,7 +8,7 @@ import umbrellaIcon from "./icon/umbrella.png";
 import windIcon from "./icon/wind.svg";
 import humidityicon from "./icon/humidity.svg";
 import mist from "./icon/mist.svg";
-export { cloudStatus};
+export default cloudStatus;
 
 const data = new Date();
 const hour = data.getHours()

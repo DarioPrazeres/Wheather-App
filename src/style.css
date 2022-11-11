@@ -134,7 +134,7 @@ h6{
     font-size: 16px;
 }
 
-/*List of Cities*/
+/*List of Cities
 .list-Search{
     padding: 5px;
 }
@@ -163,6 +163,7 @@ h6{
 .list-button:hover{
     outline: 1px white solid;
 }
+*/
 .statusCity{
     display: flex;
     flex-direction: column;
