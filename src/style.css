@@ -442,3 +442,11 @@ h6{
 .nav h5{
     margin: 7px;
 }
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    font-weight: 400;
+}
