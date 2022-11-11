@@ -133,37 +133,6 @@ h6{
     height: 45px;
     font-size: 16px;
 }
-
-/*List of Cities
-.list-Search{
-    padding: 5px;
-}
-.list-button{
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    margin: 20px 0px 20px 0px;
-    color: white;
-    text-align: left;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #05050500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.seta{
-    width: 20px;
-    height: 20px;
-    background-image: url(./icon/seta.png);
-    background-size: contain;
-}
-.list-button:hover{
-    outline: 1px white solid;
-}
-*/
 .statusCity{
     display: flex;
     flex-direction: column;
@@ -181,15 +150,6 @@ h6{
     font-size: 70px;
     margin: 63px 0px 63px 0px;
 }
-
-/*
-.rain, .huminity, .temp, .wind{
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-}*/
 .last{
     border-right: none;
 }
@@ -214,8 +174,8 @@ h6{
     height: 40px;
 }
 .image_10{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 0px 0px 10px 0px;
 }
 .rainPercent{
@@ -420,6 +380,7 @@ footer a{
     }
     .sideBar{
         width: 100%;
+        height: 600px;
     }
     .body-project{
         margin: 0;
@@ -440,6 +401,22 @@ footer a{
     }
     .day{
         width: 125px;
+    }
+    .image_10{
+        width: 200px;
+        height: 200px;
+        margin: 0px 0px 5px 0px;
+    }
+    .date, .sky{
+        margin: 20px 0px 20px 0px;
+    }
+    .tempCity{
+        padding: 5px;
+        font-size: 70px;
+        margin: 31px 0px 31px 0px;
+    }
+    .status{
+        padding-top: 10px;
     }
 }
 @media only screen and (max-width: 2000px){
