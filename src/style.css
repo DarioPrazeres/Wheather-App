@@ -419,12 +419,12 @@ footer a{
         flex-direction: column;
     }
     .sideBar{
-        width: 100vw;
+        width: 100%;
     }
     .body-project{
         margin: 0;
         padding: 15px;
-        width: 100vw;
+        width: 100%;
     }
     .more-info{ 
         grid-template-columns: 400px;
