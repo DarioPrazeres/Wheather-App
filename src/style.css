@@ -284,6 +284,7 @@ h6{
 /*----------Week Weather---------*/
 .temp-day{
     display: flex;
+    flex-wrap: wrap;
     margin: 150px 0px 40px 0px;
     justify-content: space-around;
 }
@@ -403,4 +404,33 @@ footer{
 footer a{
     color: white;
     font-weight: 400;
+}
+@media only screen and (max-width: 1300px){
+    h4{
+        font-size: 16px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .sideBar{
+        width: 100vw;
+    }
+    .body-project{
+        margin: 0;
+        padding: 15px;
+        width: 100vw;
+    }
+    .more-info{ 
+        grid-template-columns: 400px;
+        grid-template-rows: 220px 220px 125px 125px;
+    }
+    .high{
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 2000px){
+    h4{
+        font-size: 16px;
+    }
 }
