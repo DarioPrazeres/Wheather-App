@@ -379,9 +379,11 @@ footer a{
         flex-direction: column;
     }
     .sideBar{
+        width: 100%;
         height: 600px;
     }
     .body-project{
+        width: 100%;
         margin: 0;
         padding: 15px;
     }
