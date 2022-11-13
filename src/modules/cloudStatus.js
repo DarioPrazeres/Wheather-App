@@ -4,9 +4,6 @@ import rainy from  "../icon/rainy.svg";
 import snow from  "../icon/snow.svg";
 import moon from  "../icon/moon.svg";
 import cloudNight from   "../icon/cloudy-night.svg";
-import umbrellaIcon from "../icon/umbrella.png";
-import windIcon from "../icon/wind.svg";
-import humidityicon from "../icon/humidity.svg";
 import mist from "../icon/mist.svg";
 
 function cloudStatus(statusTemp, classli){

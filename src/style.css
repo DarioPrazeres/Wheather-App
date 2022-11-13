@@ -298,7 +298,7 @@ h6{
     font-size: 24px;
 }
 .wind, .humidity, .visibility, .air{
-    padding: 10px;
+    padding: 5px;
     background-color: #1E213A;
     text-align: center;
 }
@@ -311,7 +311,7 @@ h6{
     align-items: center;
 }
 .humidity h5, .humidity h2{
-    margin: 15px;
+    margin: 7px;
 }
 .progressive{
     margin: 10px;
@@ -365,13 +365,8 @@ footer a{
     color: white;
     font-weight: 400;
 }
-@media only screen and (max-width: 800px){
-    .more-info{ 
-        grid-template-columns: 300px;
-        grid-template-rows: 220px 220px 125px 125px;
-    }
-}
-@media only screen and (max-width: 1400px){
+
+@media only screen and (max-width: 1600px){
     h4{
         font-size: 16px;
     }
@@ -387,10 +382,6 @@ footer a{
         width: 100%;
         margin: 0;
         padding: 15px;
-    }
-    .more-info{ 
-        grid-template-columns: 320px;
-        grid-template-rows: 220px 220px 125px 125px;
     }
     .high{
         margin-left: 0px;
@@ -423,5 +414,21 @@ footer a{
 @media only screen and (max-width: 2000px){
     h4{
         font-size: 16px;
+    }
+    .day{
+        width: 125px;
+    }
+    .main{
+        height: 900px;
+    }
+    .more-info{ 
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 210px 100px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .more-info{ 
+        grid-template-columns: 300px;
+        grid-template-rows: 220px 220px 125px 125px;
     }
 }
