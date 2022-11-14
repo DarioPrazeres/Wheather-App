@@ -32,7 +32,7 @@ async function weatherUnity(city) {
     /**-------Initialization of Functions----------- */
     var humidityValue = cityData.main.humidity;
     weekTimeline();
-    headCity(cityData.name, cityData.weather[0].main, converterWeather(realTemperature, unity));
+    headCity(cityData.name, cityData.weather[0].icon,cityData.weather[0].main, converterWeather(realTemperature, unity));
     humidityShow(humidityValue);
     showAir(cityData.main.pressure);
     showVisibility(cityData.visibility / 1000);
@@ -45,7 +45,7 @@ async function weatherUnity(city) {
         buttonKelvin.classList.remove('btn-active');
         buttonCelsius.classList.add('btn-active');
         unity = 'Celsius';
-        headCity(cityData.name, cityData.weather[0].main, converterWeather(realTemperature, unity));
+        headCity(cityData.name, cityData.weather[0].icon,cityData.weather[0].main, converterWeather(realTemperature, unity));
         maxMinShow();
     });
     buttonFahrenheit.addEventListener('click', () => {
@@ -53,7 +53,7 @@ async function weatherUnity(city) {
         buttonKelvin.classList.remove('btn-active');
         buttonFahrenheit.classList.add('btn-active');
         unity = 'Fahrenheit';
-        headCity(cityData.name, cityData.weather[0].main, converterWeather(realTemperature, unity));
+        headCity(cityData.name, cityData.weather[0].icon,cityData.weather[0].main, converterWeather(realTemperature, unity));
         maxMinShow();
     });
     buttonKelvin.addEventListener('click', () => {
@@ -61,7 +61,7 @@ async function weatherUnity(city) {
         buttonCelsius.classList.remove('btn-active');
         buttonKelvin.classList.add('btn-active');
         unity = 'Kelvin';
-        headCity(cityData.name, cityData.weather[0].main, converterWeather(realTemperature, unity));
+        headCity(cityData.name, cityData.weather[0].icon,cityData.weather[0].main, converterWeather(realTemperature, unity));
         maxMinShow();
     });
 }
@@ -76,7 +76,7 @@ function maxMinShow(){
 function showStatus(){
     var count = 1;
     for (let j = 0; j < 5; j++) { 
-        weatherDaily(dailyData.daily[count].weather[0].main, j);
+        weatherDaily(dailyData.daily[count].weather[0].icon, j);
         count++;
     }
 }

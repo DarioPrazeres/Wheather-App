@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Raleway, sans-serif; 
+    font-style: normal;
     color: white;  
     font-weight: 100;
 }
@@ -249,7 +250,7 @@ h6{
     justify-content: space-around;
 }
 .day{
-    width: 175px;
+    width: 180px;
     height: 230px;
     margin: 5px;
     padding: 15px;
@@ -391,9 +392,6 @@ footer a{
         width: 100px;
         height: 100px;
     }
-    .day{
-        width: 125px;
-    }
     .image_10{
         width: 150px;
         height: 150px;
@@ -414,16 +412,6 @@ footer a{
 @media only screen and (max-width: 2000px){
     h4{
         font-size: 16px;
-    }
-    .day{
-        width: 125px;
-    }
-    .main{
-        height: 900px;
-    }
-    .more-info{ 
-        grid-template-columns: 320px 320px;
-        grid-template-rows: 210px 100px;
     }
 }
 @media only screen and (max-width: 800px){
