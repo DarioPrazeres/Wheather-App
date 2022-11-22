@@ -41,6 +41,8 @@
 
 ## Overview
 
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+
 <p>The LWheather-App allow to search a wheather in the some city. And show a lot information about it. This information can be a temperature of all day, some hours and humity. This information came from API Open Weather Map</p>
 
 
