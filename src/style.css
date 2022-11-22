@@ -143,6 +143,7 @@ h6{
     justify-content: center;
 }
 .status{
+    opacity: 0.8;
     padding-top: 50px;
     text-align: center;
 }
