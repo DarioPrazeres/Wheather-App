@@ -15,7 +15,7 @@ gpsButton.addEventListener('click', ()=>{
     navigator.geolocation.getCurrentPosition(sucessCallback, errorCallback);
 })
  const  sucessCallback = async (position) =>{
-    const daily = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude.toFixed(4)}&lon=${position.coords.longitude.toFixed(3)}&exclude=weekly&appid=${key}`, { mode: 'cors' });
+    const daily = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude.toFixed(4)}&lon=${position.coords.longitude.toFixed(3)}&exclude=weekly&appid=${key}`, { mode: 'cors' });
     const dataDay = await daily.json();
     const timeZone = (dataDay.timezone).split('/');
     weatherUnity(timeZone[1]);
